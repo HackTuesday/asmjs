@@ -1,12 +1,19 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8"> 
     <title>Let's call some asmjs functions</title>
   </head>
   <body onload="rasmjs()">
     <h1>Let's call some asmjs functions</h1>
 
-    <p id="output"></p>
+    <label>result
+    <input type="text" id="output"></input>
+    </label>
+
+    <label>calc time (ms)
+    <input type="text" id="time"></input>
+    </label>
 
     <script src="rasmod.js"></script>
     <script src="rasmjs.js"></script>
