@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>Let's call some asmjs functions</title>
+
+    <style type="text/css">
+      label { display: block; }
+    </style>
+
+  </head>
+  <body onload="rasmjs()">
+    <h1>Let's call some asmjs functions</h1>
+
+    <form onsubmit="calcfib()">
+      <label>fib(
+      <input type="text" id="index" value="40" />
+      )
+      </label>
+      
+    </form>
+
+
+    <label>result
+    <input type="text" id="output" />
+    </label>
+
+    <label>calc time (ms)
+    <input type="text" id="time" />
+    </label>
+
+    <script src="rasmod.js"></script>
+    <script src="rasmjs.js"></script>
+  </body>
+</html>
+
