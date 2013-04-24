@@ -1,6 +1,17 @@
-function rasmjs() {
+var myModule;
 
-  var myModule = rasmod( window );
+function rasmjs() {
+  myModule = rasmod( window );
+  docalcfib();
+}
+
+function calcfib(e) {
+  e.preventDefault();
+  docalcfib();
+  return false;
+}
+
+function docalcfib() {
   var index = parseInt( document.getElementById("index").value );
 
   var start = ( new Date() ).getTime();
