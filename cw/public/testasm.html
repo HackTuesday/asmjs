@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/testasm.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            var asmModule = ASMFib(window),
+                simpleModule=simpleFib();
+
+            $('body').on('click','button',function(e){
+                var index = $('#index').val()| 0,
+                    output,
+                    time=(new Date()).getTime();
+
+                if(this.id=="btnAsmjs")
+                    output=asmModule.fib(index);
+                else
+                    output=simpleModule.fib(index);
+
+                time=(new Date()).getTime() -time;
+                $('#output').text(output);
+                $('#time').text(time);
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>
+            <label>
+                <span>index</span>
+                <input id="index" type="number" />
+            </label>
+        </li>
+        <li>
+            <span>value</span>
+            <output id="output"></output>
+        </li>
+        <li>
+            <span>time</span>
+            <output id="time"></output>
+        </li>
+        <li>
+            <ul style="list-style-type: none">
+                <li style="display: inline-block">
+                    <button id="btnAsmjs">asmjs</button>
+                </li>
+                <li style="display: inline-block">
+                    <button id="btnJs">JS</button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
