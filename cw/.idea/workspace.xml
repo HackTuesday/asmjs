@@ -5,7 +5,7 @@
     <ignored path="cw.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/testasm.html" changelist="05a872da-2fbe-4835-b80d-56f2f61dc775" time="1366766339196" ignored="false" />
-    <file path="/testasm.js" changelist="05a872da-2fbe-4835-b80d-56f2f61dc775" time="1366766387652" ignored="false" />
+    <file path="/testasm.js" changelist="05a872da-2fbe-4835-b80d-56f2f61dc775" time="1366767008712" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="testasm.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/testasm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="14" selection-start="39" selection-end="39" vertical-scroll-proportion="0.033783782">
+            <state line="21" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="0.6756757">
               <folding />
             </state>
           </provider>
@@ -302,7 +302,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/testasm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="39" selection-end="39" vertical-scroll-proportion="0.033783782">
+        <state line="21" column="5" selection-start="391" selection-end="391" vertical-scroll-proportion="0.6756757">
           <folding />
         </state>
       </provider>
