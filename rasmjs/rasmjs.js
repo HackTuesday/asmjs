@@ -2,22 +2,25 @@ var myModule;
 
 function rasmjs() {
   myModule = rasmod( window );
-  docalcfib();
+  docalc();
 }
 
-function calcfib(e) {
+function calc(e) {
   e.preventDefault();
-  docalcfib();
+  docalc();
   return false;
 }
 
-function docalcfib() {
+function docalc() {
   var index = parseInt( document.getElementById("index").value );
+  var action = document.getElementById("calcForm").getAttribute( "action" );
 
   var start = ( new Date() ).getTime();
 
-  var fib = myModule.fibonacci( index );
-  document.getElementById("output").value = fib;
+  //var fib = myModule.fibonacci( index );
+  var result = myModule[ action ]( index)
+
+  document.getElementById("output").value = result;
 
   var end = ( new Date() ).getTime();
   document.getElementById("time").value = end - start;
